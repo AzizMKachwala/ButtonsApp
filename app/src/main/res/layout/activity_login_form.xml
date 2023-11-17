@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/gray"
+    tools:context=".loginForm">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/sky"
+        android:padding="30dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login Form"
+            android:background="@color/red"
+            android:textSize="30sp"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/etvUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:hint="Enter Username"
+            android:minHeight="50dp"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/etvPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="numberPassword"
+            android:hint="Enter Password"
+            android:minHeight="50dp"
+            android:maxLength="10"
+            android:textColorHint="@color/black"
+            />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/red"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Submit"/>
+
+    </LinearLayout>
+
+</LinearLayout>
